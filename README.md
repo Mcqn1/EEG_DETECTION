@@ -2,6 +2,8 @@
 
 This project provides a complete, end-to-end pipeline to train a machine learning model for seizure detection from EEG data and serve it through a beautiful, interactive web interface built with Streamlit. The system is robustly designed to handle diverse EEG datasets in `.edf` format, automatically standardizing different channel configurations and sampling rates.
 
+
+
 ## ✨ Features
 
 -   **Dynamic Data Handling**: Automatically processes `.edf` files with different channel montages and sampling rates.

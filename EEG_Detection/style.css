@@ -1,0 +1,114 @@
+/* Import a clean, modern font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Keyframes for the animated gradient background */
+@keyframes gradient-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Base font styling */
+html, body, [class*="st-"] {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Main App Container with Animated Gradient */
+.stApp {
+    color: #e0fbfc;
+    background: linear-gradient(-45deg, #0f0c29, #302b63, #24243e);
+    background-size: 400% 400%;
+    animation: gradient-animation 15s ease infinite;
+}
+
+
+.main-container {
+    background: rgba(22, 27, 34, 0.6); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* The "frosted glass" effect */
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 2.5rem 3.5rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+/* Title styling */
+h1 {
+    font-size: 2.8rem !important;
+    font-weight: 700 !important;
+    color: #ffffff !important;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+/* Subheader/paragraph styling */
+.stMarkdown p {
+    font-size: 1.1rem !important;
+    color: #b0c4de; /* Lighter blue for better contrast */
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto;
+    padding-bottom: 2.5rem;
+}
+
+/* File uploader custom label */
+.stFileUploader > label {
+    font-size: 1.2rem !important;
+    font-weight: 500;
+    color: #58A6FF;
+    margin-bottom: 1rem;
+}
+
+/* Dashed border for file uploader dropzone */
+.stFileUploader [data-testid="stFileUploaderDropzone"] {
+    border: 2px dashed #388BFD;
+    background-color: rgba(56, 139, 253, 0.05);
+    border-radius: 16px;
+}
+
+/* Button styling */
+.stButton>button {
+    border-radius: 12px;
+    padding: 0.8rem 2.5rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+    background-image: linear-gradient(45deg, #388BFD, #1F6FEB);
+    color: white;
+    border: none;
+    box-shadow: 0 4px 20px rgba(31, 111, 235, 0.4);
+    width: 100%;
+    transition: all 0.3s ease;
+}
+.stButton>button:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 25px rgba(31, 111, 235, 0.5);
+}
+
+/* Result boxes styling */
+.stAlert {
+    border-radius: 12px;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Red for seizure detected */
+.stAlert[data-baseweb="notification"][role="alert"] {
+    background-color: rgba(217, 39, 69, 0.2);
+    color: #ff758f;
+    border-left: 5px solid #D92745;
+}
+
+/* Green for no seizure detected */
+.stAlert[data-baseweb="notification"][role="status"] {
+    background-color: rgba(22, 163, 74, 0.2);
+    color: #34d399;
+    border-left: 5px solid #16A34A;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    color: #8B949E;
+}

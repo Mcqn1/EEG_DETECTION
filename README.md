@@ -41,7 +41,7 @@ This project is built with a powerful stack of data science and web development 
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/Mcqn1/SEIZURE_DETECTION_MODEL.git][(https://github.com/Mcqn1/SEIZURE_DETECTION_MODEL.git)]
+    git clone [https://github.com/Mcqn1/SEIZURE_DETECTION_MODEL.git]
     cd SEIZURE_DETECTION_MODEL
     ```
 

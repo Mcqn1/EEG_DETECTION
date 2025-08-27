@@ -50,9 +50,7 @@ This project is built with a powerful stack of data science and web development 
     pip install streamlit mne numpy scikit-learn joblib scipy
     ```
 
-3.  **Prepare the Data:**https://github.com/Mcqn1/SEIZURE_DETECTION_MODEL/wiki
-    -   Download the required datasets (see Data Acknowledgement section).
-    -   Place the patient folders inside the `EEG_DATA` directory.
+
 
 ---
 ## ⚙️ How to Use
